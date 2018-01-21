@@ -7,14 +7,15 @@
   <title>Austin Fisher</title>
 
   <link href="index.css" rel="stylesheet" type="text/css" />
-  
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 </head>
 <body>
 
   <div class="topnav" id='myTopnav'>
       <a href="#name" class='name'>Austin Fisher</a>
       <a href="#home" class='active'>Bio</a>
-      <a href="#news">Portfolio</a>
+      <a class="portfolio-link" href="#news">Portfolio</a>
       <a href="#contact">Contact</a>
       <a href="#about">Github</a>
     </div>
@@ -23,67 +24,83 @@
       <div class="hero-content">
         <h1>Hello, my name is Austin</h1>
         <h2>I am a full stack developer residing in San Francisco</h2>
-        <img class="headshot" src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg" />
-        <h3>HTML / CSS / Javascript / jQuery / Node / React</h3>
       </div>
     </div>
     
     <div class="bio-container">
       <div class="bio-content">
         <h2 class="about-me">About Me</h2>
+        <img class="headshot" src="images/hero2.jpeg" />
+        <h3>Javascript / Node / jQuery / React / HTML / CSS</h3>
         <p class="about-me-p">I enjoy music, sports, food, traveling, and have a general passion for life. I have always been intrigued by the internet and technology for as long as I can remember. But it wasn’t until recently that I began exploring web development and learned to code. My favorite thing about coding is, having an idea in your head, and then watching that idea evolve over time and come to life. I aim to learn something new every day, and make the web a better place.</p>
         </div>
     </div>
     
-    <div class="portfolio-container">
+    <div id="portfolio-container">
       <div class="portfolio-content">
         <h2 class="projects">Projects</h2>
-        <div class="hopinion-screen">Hopinion Screen Shot</div>
-        <h4>Hopinion</h4>
-        <p>Hopinion is a fully responsive full-stack user based app that allows users to search cities and write comments about different beers they have tried.</p>
+        <img class="hopinion-screen" src="images/hopinion-screenshot.png" />
+        <h4 class="hopinion-name">Hopinion</h4>
+        <p class="hopinion-description">Hopinion is a fully responsive full-stack user based app that allows users to search cities and write   comments about different beers they have tried.</p>
         <ul class="hopinion-links">
-          <li><a href="#">Demo</a></li>
-          <li><a href="#">Code</a></li>
+          <li class="demo" ><a href="https://hopinion.netlify.com">Demo</a></li>
+          <li class="code" ><a href="https://github.com/AFish622/hopinion-client">Code</a></li>
         </ul>
+
+        <div>
+          <span class="line-fade"></span>
+        </div>
         
         <div class="concert-content">
-          <div class="concert-screen">Concer Screen Shot</div>
-            <h4>Concert Calendar</h4>
-            <p>A responsive server side app that allows you to look up upcoming shows and festivals and add them to a personalized calendar to track them with ease.</p>
+          <img class="concert-screen" src="images/concert-screenshot.png">
+            <h4 class="concert-name">Concert Calendar</h4>
+            <p class="concert-description">A responsive server side app that allows you to look up upcoming shows and festivals and add them to a personalized calendar to track them with ease.</p>
             <ul class="concert-links">
-              <li><a href="#">Demo</a></li>
-              <li><a href="#">Code</a></li>
+              <li class="demo" ><a href="https://concert-calendar.herokuapp.com/">Demo</a></li>
+              <li class="code" ><a href="https://github.com/AFish622/concert">Code</a></li>
             </ul>
         </div>
       </div>
+
+      <div class="break-line">
+        <span class="line-fade"></span>
+      </div>
+        
       
       <div class="cocktail-content">
-        <div class="cocktail-screen">Cocktail Screen Shot</div>
-        <h4>Cocktail Crafter</h4>
-        <p>A responsive asynchronous client side app where you can look up cocktails by name, by ingredients  in each cocktail, or discover a new cocktail by searching at random.</p>
+        <img class="cocktail-screen" src="images/cocktail-screenshot.png" />
+        <h4 class="cocktail-name">Cocktail Crafter</h4>
+        <p class="concert-description">A responsive asynchronous client side app where you can look up cocktails by name, by ingredients  in each cocktail, or discover a new cocktail by searching at random.</p>
         <ul class="cocktail-list">
-          <li><a href="#">Demo</a></li>
-          <li><a href="#">Code</a></li>
+          <li class="demo" ><a href="https://afish622.github.io/CocktailCrafter/">Demo</a></li>
+          <li class="code" ><a href="https://github.com/AFish622/CocktailCrafter">Code</a></li>
         </ul>
       </div>
     </div>
+
+    <div>
+      <span class="break-line2"></span>
+    </div>
+          
     
     <div class="contact-content">
-      <h2>Lets talk</h2>
-      <h3>Opportunities, code, or questions</h3>
+      <h2>Lets talk - Opportunities, Code, or Questions</h2>
       <ul class="contact-list">
-        <li><a href="#">Linked In</a></li>
-        <li><a href="#">Github</a></li>
-        <li><a href="#">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/austin-fisher/"><img class="linked-in" src="images/linkedin 2.png"></a></li>
+        <li><a href="https://github.com/AFish622"><img class="git-hub" src="images/github 2.png"></a></li>
+        <li class="email-list"><a href="#"><img class="email" src="images/email 2.png"></a></li>
       </ul>
+      <p class="copyright">© Austin Fisher 2018</p>
     </div>
     
-    <div class="copyright">
-      <p>© Austin Fisher 2018</p>
-    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
     
-    
-    <script src="index.js"></script>
+    <script src="portfolio.js"></script>
   </body>
 
 </body>
