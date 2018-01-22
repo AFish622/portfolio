@@ -364,12 +364,23 @@ li.code {
   .name {
     margin-right: 6%;
   }
+
+  h4.hopinion-name, .concert-name, .cocktail-name {
+    margin-bottom: -2%;  
+  }
+
+  img.hopinion-screen, img.concert-screen, img.cocktail-screen {
+    margin-bottom: -5%;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
   .name {
     margin-right: -2%;
   }
+
+
 }
 
 @media screen and (max-width: 360px) {
