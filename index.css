@@ -48,9 +48,6 @@ html, body {
   background-image: url(https://pre00.deviantart.net/3ae0/th/pre/i/2012/217/a/b/san_francisco_from_treasure_island_by_conceptualuminosity-d59whjj.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-size: contain; */
-  /*background-position: center;*/
-
 }
 
 .hero-content {
@@ -68,9 +65,6 @@ html, body {
   margin-top: -1.5%;
   background-image: url(http://getwallpapers.com/wallpaper/full/7/c/d/469138.jpg);
   background-size: cover;
-  /*background-repeat: no-repeat; */
-  /*background-size: contain;*/
-  /*background-position: center;*/
   height: 780px;
 }
 
@@ -240,13 +234,13 @@ li.code {
 }
 
 .line-fade {
-    display:block;
-    border:none;
-    color:white;
-    height:1px;
-    background:black;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(black), to(#cfcdcc));
-    margin-top: 5%;
+  display:block;
+  border:none;
+  color:white;
+  height:1px;
+  background:black;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(black), to(#cfcdcc));
+  margin-top: 5%;
 }
 
 .fa-chevron-down {
@@ -269,6 +263,7 @@ li.code {
   height: 12px;
   width: 12px;
 }
+
 
 @-webkit-keyframes bounce {
     0% { top: 0; }
@@ -388,28 +383,3 @@ li.code {
     font-size: 15px;
   }
 }
-
-
-
-/*@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  
-  .topnav.responsive {
-    position: relative;
-  }
-  
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}*/
