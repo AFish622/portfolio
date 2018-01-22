@@ -385,7 +385,11 @@ li.code {
 
 @media screen and (max-width: 360px) {
   .name {
-    margin-right: -5.5%;
+    /*margin-right: %;*/
+  }
+
+  .topnav a {
+    font-size: 15px;
   }
 }
 
