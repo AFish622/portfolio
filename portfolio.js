@@ -1,9 +1,26 @@
+
 const clickOnPortfolio = () => {
-	$('body').on('click', '.portfolio-link', (event) => {
-		 $('html, body').animate({
-        scrollTop: $('#portfolio-container').offset().top
-    }, 2000)
-	}
+	$("#portfolio-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#portfolio-container").offset().top
+    }, 2000);
+});
+}
+
+const clickOnBio = () => {
+	$("#bio-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".hero-content").offset().top
+    }, 2000);
+});
+}
+
+const clickOnContact = () => {
+	$("#contact-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".contact-content").offset().top
+    }, 2000);
+});
 }
 
 
@@ -11,5 +28,7 @@ const clickOnPortfolio = () => {
 
 $(function() {
 	clickOnPortfolio()
+	clickOnBio()
+	clickOnContact()
 })
 

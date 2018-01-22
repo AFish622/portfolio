@@ -8,29 +8,30 @@
 
   <link href="index.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 
 </head>
 <body>
 
   <div class="topnav" id='myTopnav'>
       <a href="#name" class='name'>Austin Fisher</a>
-      <a href="#home" class='active'>Bio</a>
-      <a class="portfolio-link" href="#news">Portfolio</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">Github</a>
+      <a href="#home" class='active' id="bio-button">Bio</a>
+      <a class="portfolio-link" id="portfolio-button" href="#news">Portfolio</a>
+      <a href="#contact" id="contact-button">Contact</a>
     </div>
     
     <div class="hero-container">
       <div class="hero-content">
         <h1>Hello, my name is Austin</h1>
         <h2>I am a full stack developer residing in San Francisco</h2>
+        <i id="toProfile" class="fa fa-chevron-down bounce" style="transform: translateY(0px);"></i>
       </div>
     </div>
     
     <div class="bio-container">
       <div class="bio-content">
         <h2 class="about-me">About Me</h2>
-        <img class="headshot" src="images/hero2.jpeg" />
+        <img class="headshot" src="images/hero2.jpeg"  />
         <h3>Javascript / Node / jQuery / React / HTML / CSS</h3>
         <p class="about-me-p">I enjoy music, sports, food, traveling, and have a general passion for life. I have always been intrigued by the internet and technology for as long as I can remember, but it wasn’t until recently that I began exploring web development and learned to code. My favorite thing about coding is having an idea in your head, and then watching that idea evolve over time and come to life. I aim to learn something new every day, and ultimately make the web a better place.</p>
         </div>
@@ -84,7 +85,7 @@
           
     
     <div class="contact-content">
-      <h2>Let's talk - Opportunities, Code, or Questions</h2>
+      <h2 class="lets-talk">Let's talk - Opportunities, Code, or Questions</h2>
       <ul class="contact-list">
         <li><a href="https://www.linkedin.com/in/austin-fisher/"><img class="linked-in" src="images/linkedin 2.png"></a></li>
         <li><a href="https://github.com/AFish622"><img class="git-hub" src="images/github 2.png"></a></li>

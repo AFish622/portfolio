@@ -30,13 +30,14 @@ html, body {
     color: black;
 }
 
+
 .topnav .icon {
     display: none;
 }
 
 .name {
   margin-left: 1%;
-  margin-right: 65%;
+  margin-right: 69%;
 }
 
 .hero-container {
@@ -46,7 +47,9 @@ html, body {
   height: 720px;
   background-image: url(https://pre00.deviantart.net/3ae0/th/pre/i/2012/217/a/b/san_francisco_from_treasure_island_by_conceptualuminosity-d59whjj.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain; 
+  /*background-position: center;*/
+
 }
 
 .hero-content {
@@ -64,6 +67,9 @@ html, body {
   margin-top: -1.5%;
   background-image: url(http://getwallpapers.com/wallpaper/full/7/c/d/469138.jpg);
   background-size: cover;
+  /*background-repeat: no-repeat; */
+  /*background-size: contain;*/
+  /*background-position: center;*/
   height: 780px;
 }
 
@@ -134,6 +140,7 @@ div.concert-content, div.cocktail-content {
   border: 1px solid black;
   margin-right: auto;
   margin-left: auto;
+  height: auto;
 }
 
 .projects {
@@ -240,6 +247,81 @@ li.code {
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(black), to(#cfcdcc));
     margin-top: 5%;
 }
+
+.fa-chevron-down {
+  margin-top: 23%;
+  transform: translateY(0px);
+  color: white;
+  font-size: 50px !important;
+}
+
+.bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.5s infinite linear;
+  -o-animation: bounce 0.5s infinite linear;
+  -webkit-animation: bounce 0.5s infinite linear;
+  animation: bounce 0.5s infinite linear;
+}
+
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+
+@media screen and (max-width: 414px) {
+  img.headshot {
+    height: auto;
+    width: 100%;
+  }
+
+  .about-me-p {
+    font-size: 16px;
+  }
+
+  .lets-talk {
+    font-size: 20px;
+  }
+
+  .contact-list {
+    margin-right: 8%;
+  }
+
+  img.git-hub {
+    margin-bottom: 3%;
+  }
+
+  ul.hopinion-links, ul.concert-links, ul.cocktail-list  {
+    margin-right: 11%;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
