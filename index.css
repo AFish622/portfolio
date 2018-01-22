@@ -25,7 +25,7 @@ html, body {
     font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav #bio-button:hover, .topnav #portfolio-button:hover, .topnav #contact-button:hover {
     background-color: #ddd;
     color: black;
 }
@@ -47,7 +47,8 @@ html, body {
   height: 720px;
   background-image: url(https://pre00.deviantart.net/3ae0/th/pre/i/2012/217/a/b/san_francisco_from_treasure_island_by_conceptualuminosity-d59whjj.jpg);
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: cover;
+  /*background-size: contain; */
   /*background-position: center;*/
 
 }
@@ -264,6 +265,11 @@ li.code {
   animation: bounce 0.5s infinite linear;
 }
 
+.heart {
+  height: 12px;
+  width: 12px;
+}
+
 @-webkit-keyframes bounce {
     0% { top: 0; }
     50% { top: -0.2em; }
@@ -295,14 +301,36 @@ li.code {
     100% { top: 0; }
 }
 
+@media screen and (max-width: 1024px) {
+  .name {
+    margin-right: 60%;
+  }
+
+  .bio-container {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .name {
+    margin-right: 48%;
+  }
+
+}
+
+
 @media screen and (max-width: 414px) {
   img.headshot {
     height: auto;
     width: 100%;
   }
 
+  .about-me {
+    font-size: 32px;
+  }
+
   .about-me-p {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .lets-talk {
@@ -320,10 +348,39 @@ li.code {
   ul.hopinion-links, ul.concert-links, ul.cocktail-list  {
     margin-right: 11%;
   }
+
+  .hero-container {
+    background-position: center;
+  }
+
+  .hero-content {
+    font-size: 20px;
+  }
+
+  .fa-chevron-down {
+  margin-top: 75%;
+  }
+
+  .name {
+    margin-right: 6%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .name {
+    margin-right: -2%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .name {
+    margin-right: -5.5%;
+  }
 }
 
 
-@media screen and (max-width: 600px) {
+
+/*@media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -344,4 +401,4 @@ li.code {
     display: block;
     text-align: left;
   }
-}
+}*/
