@@ -59,6 +59,11 @@ html, body {
   height: 360px;
   width: 360px;
   border-radius: 50%;
+  margin-bottom: 6%;
+}
+
+.technologys {
+  font-size: 27px;
 }
 
 .bio-container {
@@ -66,6 +71,7 @@ html, body {
   background-image: url(http://getwallpapers.com/wallpaper/full/7/c/d/469138.jpg);
   background-size: cover;
   height: 780px;
+  padding-bottom: 5%;
 }
 
 .bio-content {
@@ -244,7 +250,7 @@ li.code {
 }
 
 .fa-chevron-down {
-  margin-top: 23%;
+  margin-top: 19%;
   transform: translateY(0px);
   color: white;
   font-size: 50px !important;
@@ -304,11 +310,24 @@ li.code {
   .bio-container {
     background-position: center;
   }
+
 }
 
 @media screen and (max-width: 768px) {
   .name {
     margin-right: 48%;
+  }
+
+  .hero-container {
+    background-position: center;
+  }
+
+  .technologys {
+    font-size: 22px;
+  }
+
+  .bio-container {
+    padding-bottom: 13%;
   }
 
 }
@@ -318,14 +337,27 @@ li.code {
   img.headshot {
     height: auto;
     width: 100%;
+    margin-bottom: 18%;
   }
+
+  .technologys {
+    font-size: 22px;
+  }
+
+  .bio-container {
+    padding-bottom: 30%;
+  }
+
 
   .about-me {
     font-size: 32px;
+    margin-top: 12%;
+    margin-bottom: 22%;
   }
 
   .about-me-p {
     font-size: 17px;
+    width: 105%;
   }
 
   .lets-talk {
@@ -381,5 +413,13 @@ li.code {
 @media screen and (max-width: 360px) {
   .topnav a {
     font-size: 15px;
+  }
+
+  img.headshot {
+    margin-bottom: 25%;
+  }
+
+  .bio-container {
+    padding-bottom: 42%;
   }
 }
